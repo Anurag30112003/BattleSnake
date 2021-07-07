@@ -1,0 +1,26 @@
+move = "left"
+        if data["you"]["head"]["x"] =="0":
+            move = "down"
+        if data["you"]["head"]["y"] =="0":
+            move = "right"
+        if data["you"]["head"]["x"] =="10":
+            move = "up"
+        if data["you"]["head"]["x"] =="10":
+            move = "left"
+        #
+        if data["you"]["head"]["x"] =="0":
+            move = "down"
+        if data["you"]["head"]["y"] =="0":
+            move = "right"
+        if data["you"]["head"]["x"] =="10":
+            move = "up"
+        if data["you"]["head"]["x"] =="10":
+            move = "left"
+        if data["you"]["head"]["x"] =="0":
+            move = "down"
+        if data["you"]["head"]["y"] =="0":
+            move = "right"
+        if data["you"]["head"]["x"] =="10":
+            move = "up"
+        if data["you"]["head"]["x"] =="10":
+            move = "left"
