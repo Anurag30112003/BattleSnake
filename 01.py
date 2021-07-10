@@ -1,26 +1,5 @@
-move = "left"
-        if data["you"]["head"]["x"] =="0":
-            move = "down"
-        if data["you"]["head"]["y"] =="0":
-            move = "right"
-        if data["you"]["head"]["x"] =="10":
-            move = "up"
-        if data["you"]["head"]["x"] =="10":
-            move = "left"
-        #
-        if data["you"]["head"]["x"] =="0":
-            move = "down"
-        if data["you"]["head"]["y"] =="0":
-            move = "right"
-        if data["you"]["head"]["x"] =="10":
-            move = "up"
-        if data["you"]["head"]["x"] =="10":
-            move = "left"
-        if data["you"]["head"]["x"] =="0":
-            move = "down"
-        if data["you"]["head"]["y"] =="0":
-            move = "right"
-        if data["you"]["head"]["x"] =="10":
-            move = "up"
-        if data["you"]["head"]["x"] =="10":
-            move = "left"
+def a(r):
+
+    print(r - (r-1))
+for i in range(1,10):
+    a(r=5)

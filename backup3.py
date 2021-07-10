@@ -21,7 +21,7 @@ class Battlesnake(object):
             "author": "Anurag",  # TODO: Your Battlesnake Username
             "color": "#66ff99",  # TODO: Personalize
             "head": "viper",  # TODO: Personalize
-            "tail": "rattle",  # TODO: Personalize
+            "tail": "default",  # TODO: Personalize
         }
 
     @cherrypy.expose
@@ -31,7 +31,7 @@ class Battlesnake(object):
         # cherrypy.request.json contains information about the game that's about to be played.
         data = cherrypy.request.json
 
-        print("START","\n BattleSnake By Anurag")
+        print("START")
         return "ok"
 
     @cherrypy.expose
@@ -45,7 +45,6 @@ class Battlesnake(object):
         #values of height and width
         h = data["board"]["height"]
         w = data["board"]["width"]
-        
 
         # Choose a random direction to move in
         move = "left"
@@ -58,33 +57,7 @@ class Battlesnake(object):
         if data["you"]["head"]["y"] ==h-1:
             move = "left"
         if data["you"]["head"]["x"] == w-w:
-            move = "down"
-        if data["you"]["head"]["y"] ==h-h:
-            move = "right"  
-        if data["you"]["head"]["x"] == w-1:
-            move = "up"   
-        if data["you"]["head"]["y"] ==h-1:
-            move = "left"  
-        if data["you"]["head"]["x"] == w-w:
-            move = "down"
-        if data["you"]["head"]["y"] ==h-h:
-            move = "right"  
-        if data["you"]["head"]["x"] == w-1:
-            move = "up"   
-        if data["you"]["head"]["y"] ==h-1:
-            move = "left"  
-        if data["you"]["head"]["x"] == w-w:
-            move = "down" 
-        if data["you"]["head"]["y"] ==h-h:
-            move = "right"  
-        if data["you"]["head"]["x"] == w-1:
-            move = "up"   
-        if data["you"]["head"]["y"] ==h-1:
-            move = "left"  
-        if data["you"]["head"]["x"] == w-w:
-            move = "down"                  
-        
-
+            move = "down"    
             
         # if data["board"]["height"]
     
@@ -99,7 +72,7 @@ class Battlesnake(object):
         # It's purely for informational purposes, you don't have to make any decisions here.
         data = cherrypy.request.json
 
-        print("END","\n BattleSnake By Anurag")
+        print("END")
         return "ok"
 
 
